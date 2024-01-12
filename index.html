@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>survey lang po</title>
+  <style>
+    body {
+      text-align: center;
+      margin: 50px;
+    }
+    button {
+    	padding: 15px;
+    
+    	}
+  </style>
+</head>
+<body>
+  <h3><p>are u gay?</p></h3>
+  <button onclick="handleNo()" id="noButton">No</button>
+  <button onclick="handleYes()">Yes</button>
+
+  <script>
+    function handleNo() {
+      // Change the location when "No" is clicked
+      var button = document.getElementById('noButton');
+      button.style.position = 'absolute';
+      button.style.left = Math.random() * (window.innerWidth - button.clientWidth) + 'px';
+      button.style.top = Math.random() * (window.innerHeight - button.clientHeight) + 'px';
+    }
+
+    function handleYes() {
+      // Display a message when "Yes" is clicked
+      alert("okay po salamat ");
+    }
+  </script>
+</body>
+</html>
